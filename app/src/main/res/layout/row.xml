@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:elevation="3dp"
+    android:layout_margin="5dp"
+    android:foreground="?android:selectableItemBackground"
+    android:focusable="true"
+    tools:targetApi="m">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/typeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/smsType"
+        android:contentDescription="Type of Transaction"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/smsType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/smsDate"
+        android:gravity="start"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:text="TYPE"
+        android:textColor="@android:color/darker_gray"
+        android:typeface="sans"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:layout_toLeftOf="@+id/smsDate"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/smsAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smsType"
+        android:text="AMOUNT"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        android:layout_toEndOf="@+id/typeImage"
+        android:paddingStart="5dp"
+        android:layout_toRightOf="@+id/typeImage"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/smsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Date"
+        android:textColor="@android:color/darker_gray"
+        android:typeface="monospace"
+        android:textSize="18sp"
+        android:paddingEnd="5dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

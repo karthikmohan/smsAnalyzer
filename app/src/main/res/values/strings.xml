@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SMS Analyzer</string>
+
+    <string-array name="desc_array">
+        <item>Credit</item>
+        <item>Salary</item>
+        <item>Debit</item>
+        <item>Food</item>
+        <item>Transport</item>
+    </string-array>
+
+    <string-array name="options">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+</resources>
